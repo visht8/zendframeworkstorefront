@@ -1,20 +1,31 @@
-Copyright (c) 2008-2009, Keith Pope
-All rights reserved.
+Zend Framework - Chapter 4 - Basic Storefront
 
-Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
-    Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
-    Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
-    Neither the name of the Keith Pope nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT 
-SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
-INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
+This package conatins the example files for chapter 4, there are two folders 
+assets and src. Use assets to quickly follow the setp-by-step instructions in 
+the chapter, src contains the fully working application.
 
 INSTALLATION
+1. Extract the zip into a directory that your web server can access or checkout the 
+   latest source from the Google Code repository using:
+   
+   svn checkout http://zendframeworkstorefront.googlecode.com/svn/trunk/ zendframeworkstorefront-read-only
+    
+2. Download Zend Framework package and extract the Zend folder to the library directory.
+3. Point your webserver to the public directory
 
-Install the storefront database using structure and data sql files.
-Point your webserver to the public folder
-Run the Ant build
+BUILDING
+The example files use Apache Ant to configure the application, to build the application
+from command line change to the build directory and run.
 
-Done...
+ant
 
-Enjoy :)
+This will run the build and automatically configure the application for you, by
+default the environment will be "development". To change this edit the 
+environment variable in the ant.properties file, or use the following commands:
+
+ant -Denvironment=testing
+ant -Denvironment=development
+ant -Denvironment=production
+
+Installation instrcutions for Apache Ant can be found in the Appendix 
+or http://ant.apache.org/manual/index.html
