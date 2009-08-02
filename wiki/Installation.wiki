@@ -1,4 +1,4 @@
-#detailed installation instructions - contributed by derek au
+#summary detailed installation instructions - contributed by derek au
 
 = Create the database =
 
